@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">HouseITBA</string>
+    <string name="app_shared_preferences_file">HouseITBA_Preferences</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_device">Devices</string>
+    <string name="title_favs">Favorites</string>
+    <string name="title_routines">Routines</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="settings">Settings</string>
+    <string name="rutina">Routine</string>
+    <string name="actions">Actions</string>
+    <string name="routine_actions">%1$s Actions</string>
+    <string name="play_button">Run Routine</string>
+    <string name="dash">-</string>
+
+    <string name="dispositivo">Device</string>
+    <string name="favoritos">Favorite</string>
+    <string name="button">Button</string>
+    <string name="IP">IP</string>
+    <string name="port">Port</string>
+    <string name="confirm">Confirm</string>
+    <string name="save">Save</string>
+    <string name="action_search">Find</string>
+
+    <string name="notifications_channel_id_device">HouseITBANotifications_Devices</string>
+    <string name="notifications_channel_id_routine">HouseITBANotifications_Routines</string>
+    <string name="notifications_channel_description_device">HouseITBA Notification Channel for Devices</string>
+    <string name="notifications_channel_description_routine">HouseITBA Notification Channel for Routines</string>
+    <string name="notifications_channel_name_device">HouseITBA Devices</string>
+    <string name="notifications_channel_name_routine">HouseITBA Routines</string>
+
+    <string name="blinds_switch_text">State</string>
+    <string name="blind_text_off">Open</string>
+    <string name="blind_text_on">Close</string>
+    <string name="progress">Progress</string>
+    <string name="opening">Opening</string>
+    <string name="closing">Closing</string>
+    <string name="blind_opened">Opened</string>
+    <string name="blind_closed">Closed</string>
+
+    <string name="state">State</string>
+    <string name="open">Open</string>
+    <string name="closed">Close</string>
+
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <string name="brightness">Brightness</string>
+    <string name="color">Color</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="heat">Heat</string>
+    <string name="conventional">Normal</string>
+    <string name="bottom">Bottom</string>
+    <string name="top">Top</string>
+    <string name="grill">Grill</string>
+    <string name="large">Large</string>
+    <string name="eco">Eco</string>
+    <string name="normal">Normal</string>
+    <string name="convection">Convection</string>
+
+    <string name="block">Block</string>
+    <string name="opened">Open</string>
+    <string name="blocked">Blocked</string>
+    <string name="unblocked">Unblocked</string>
+
+    <string name="temperatureFreezer">Freezer Temperature</string>
+    <string name="mode">Mode</string>
+    <string name="default_mode">Normal</string>
+    <string name="party">Party</string>
+    <string name="vacation">Vacations</string>
+
+    <string name="cool">Cool</string>
+    <string name="fan">Fan</string>
+    <string name="vertical_swing">Vertical Swing</string>
+    <string name="vs_auto">Auto</string>
+    <string name="vs_22">22</string>
+    <string name="vs_45">45</string>
+    <string name="vs_67">67</string>
+    <string name="vs_90">90</string>
+    <string name="horizontal_swing">Horizontal Swing</string>
+    <string name="hs_auto">Auto</string>
+    <string name="hs_m90">-90</string>
+    <string name="hs_m45">-45</string>
+    <string name="hs_0">0</string>
+    <string name="hs_45">45</string>
+    <string name="hs_90">90</string>
+    <string name="fan_speed">Fan Speed</string>
+    <string name="fs_auto">Auto</string>
+    <string name="fs_25">25</string>
+    <string name="fs_50">50</string>
+    <string name="fs_75">75</string>
+    <string name="fs_100">100</string>
+
+    <string name="codigo">Security password</string>
+    <string name="armar">Security</string>
+    <string name="arm_stay">Arm - Stay</string>
+    <string name="arm_away">Arm - Leave</string>
+    <string name="disarm">Disarm</string>
+    <string name="cambiar_codigo">Change password</string>
+    <string name="cambiar">Change</string>
+    <string name="armed_stay_status">Armed - Stay</string>
+    <string name="armed_away_status">Armed - Leave</string>
+    <string name="disarmed_status">Disarmed</string>
+
+    <string name="action_success">%1$s\'s action executed</string>
+    <string name="action_fail">Failed to run %1$s\'s action</string>
+
+    <string name="routine_success">Routine %1$s has been executed</string>
+    <string name="routine_fail">There was a problem executing %1$s</string>
+    <string name="fail_activateAlarm">Failed to activate alarm</string>
+    <string name="fail_block">Failed to lock</string>
+    <string name="fail_brightness">Failed to change brightness</string>
+    <string name="fail_close">Failed to close</string>
+    <string name="fail_color">Failed to change color</string>
+    <string name="fail_convectionMode">Failed to change to convection mode</string>
+    <string name="fail_deactivateAlarm">Failed to deactivate alarm</string>
+    <string name="fail_fanSpeed">Failed to change fan speed</string>
+    <string name="fail_freezerTemp">Failed to change freezer temperature</string>
+    <string name="fail_grillMode">Failed to change to grill mode</string>
+    <string name="fail_heatMode">Failed to change to heat mode</string>
+    <string name="fail_horizontalSwing">Failed to change horizontal swing</string>
+    <string name="fail_invalidPassword">Invalid password</string>
+    <string name="fail_mode">Failed to change mode</string>
+    <string name="fail_newPasswordInvalid">Invalid new password</string>
+    <string name="fail_newPasswordNeeded">New password needed</string>
+    <string name="fail_off">Failed to switch off</string>
+    <string name="fail_on">Failed to switch on</string>
+    <string name="fail_open">Failed to open</string>
+    <string name="fail_openDoorFirst">Failed to do action ,you must unlock door first</string>
+    <string name="fail_passwordChange">Failed to switch password</string>
+    <string name="fail_passwordNeeded">Password needed</string>
+    <string name="fail_temperature">Failed to change temperature</string>
+    <string name="fail_unblock">Failed to unlock</string>
+    <string name="fail_verticalSwing">Failed to change vertical swing</string>
+    <string name="success_APIConnection">API settings updated</string>
+    <string name="success_passwordChange">Password changed successfully</string>
+    <string name="alert_connectApi">Connect to API in configurations</string>
+    <string name="fail_invalid_ip">Invalid IP address</string>
+    <string name="fail_invalid_port">Invalid port. Ports go from 1024 to 65535</string>
+    <string name="ac">AC</string>
+    <string name="alarm">Alarm</string>
+    <string name="blinds">Blinds</string>
+    <string name="door">Door</string>
+    <string name="lamp">Lamp</string>
+    <string name="oven">Oven</string>
+    <string name="refrigerator">Refrigerator</string>
+    <string name="vacuum">Vacuum</string>
+    <string name="notf_deviceDeleted_title">Device Deleted</string>
+    <string name="notif_deviceChanged_body">Device %1$s switched state</string>
+    <string name="notif_deviceChanged_title">Device Modified</string>
+    <string name="notif_deviceDeleted_body">A device was deleted</string>
+    <string name="notif_newDevice_body">New device were added</string>
+    <string name="notif_newDevice_title">New Devices</string>
+</resources>

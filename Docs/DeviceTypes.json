@@ -1,0 +1,1025 @@
+{
+  "result": [
+    {
+      "id": "c89b94e8581855bc",
+      "name": "speaker",
+      "actions": [
+        {
+          "name": "setVolume",
+          "params": [
+            {
+              "name": "volume",
+              "type": "number",
+              "description": "volume level",
+              "minValue": 0,
+              "maxValue": 10,
+              "example": 6
+            }
+          ],
+          "return": {
+            "type": "number",
+            "description": "previous volume if successful, otherwise null",
+            "example": 6
+          }
+        },
+        {
+          "name": "play",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "stop",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "pause",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "resume",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "nextSong",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "previousSong",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "setGenre",
+          "params": [
+            {
+              "name": "genre",
+              "type": "string",
+              "description": "music genre",
+              "supportedValues": [
+                "classical",
+                "country",
+                "dance",
+                "latina",
+                "pop",
+                "rock"
+              ],
+              "example": "pop"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous genre if successful, otherwise null",
+            "example": "pop"
+          }
+        },
+        {
+          "name": "getPlaylist",
+          "params": [],
+          "return": {
+            "type": "object",
+            "description": "playlist if successful, otherwise null",
+            "example": [
+              {
+                "song": "Memories",
+                "artist": "Marron 5",
+                "album": "Memories",
+                "duration": "3:09"
+              },
+              {
+                "song": "Dance Monkey",
+                "artist": "Tones and I",
+                "album": "The Kids Are Coming",
+                "duration": "3:29"
+              },
+              {
+                "song": "Circles",
+                "artist": "Post Malone",
+                "album": "Hollywood's Bleeding",
+                "duration": "3:35"
+              }
+            ]
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "stopped"
+            }
+          }
+        },
+        {
+          "name": "volumeChanged",
+          "args": {
+            "type": "object",
+            "description": "previous and new volume",
+            "example": {
+              "previousVolume": 5,
+              "newVolume": 7
+            }
+          }
+        },
+        {
+          "name": "songChanged",
+          "args": {
+            "type": "object",
+            "description": "new song",
+            "example": {
+              "newSong": {
+                "title": "Memories",
+                "artist": "Marron 5",
+                "album": "Memories",
+                "duration": "3:09"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "eu0v2xgprrhhg41g",
+      "name": "blinds",
+      "actions": [
+        {
+          "name": "open",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "close",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "closing"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "go46xmbqeomjrsjr",
+      "name": "lamp",
+      "actions": [
+        {
+          "name": "turnOn",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "turnOff",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "setColor",
+          "params": [
+            {
+              "name": "color",
+              "type": "string",
+              "description": "new RGB color",
+              "minValue": "000000",
+              "maxValue": "FFFFFF",
+              "example": "BFEEF0"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous RGB color if successful, otherwise null",
+            "example": "FFFFFF"
+          }
+        },
+        {
+          "name": "setBrightness",
+          "params": [
+            {
+              "name": "brightness",
+              "type": "integer",
+              "description": "new brightness",
+              "minValue": 0,
+              "maxValue": 100,
+              "example": 90
+            }
+          ],
+          "return": {
+            "type": "number",
+            "description": "previous brightness if successful, otherwise null",
+            "example": 100
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "on"
+            }
+          }
+        },
+        {
+          "name": "colorChanged",
+          "args": {
+            "type": "object",
+            "description": "previous and new color",
+            "example": {
+              "previousColor": "000000",
+              "newColor": "BFEEF0"
+            }
+          }
+        },
+        {
+          "name": "brightnessChanged",
+          "args": {
+            "type": "object",
+            "description": "previous and new brightness",
+            "example": {
+              "previousBrightness": 100,
+              "newBrightness": 90
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "im77xxyulpegfmv8",
+      "name": "oven",
+      "actions": [
+        {
+          "name": "turnOn",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "turnOff",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "setTemperature",
+          "params": [
+            {
+              "name": "temperature",
+              "type": "number",
+              "description": "temperature in centigrades",
+              "minValue": 90,
+              "maxValue": 230,
+              "example": 180
+            }
+          ],
+          "return": {
+            "type": "number",
+            "description": "previous temperature if successful, otherwise null",
+            "example": 180
+          }
+        },
+        {
+          "name": "setHeat",
+          "params": [
+            {
+              "name": "heat",
+              "type": "string",
+              "description": "heat mode",
+              "supportedValues": [
+                "conventional",
+                "bottom",
+                "top"
+              ],
+              "example": "conventional"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous heat mode if successful, otherwise null",
+            "example": "bottom"
+          }
+        },
+        {
+          "name": "setGrill",
+          "params": [
+            {
+              "name": "grill",
+              "type": "string",
+              "description": "grill mode",
+              "supportedValues": [
+                "large",
+                "eco",
+                "off"
+              ],
+              "example": "off"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous grill mode if successful, otherwise null",
+            "example": "eco"
+          }
+        },
+        {
+          "name": "setConvection",
+          "params": [
+            {
+              "name": "convection",
+              "type": "string",
+              "description": "convection mode",
+              "supportedValues": [
+                "normal",
+                "eco",
+                "off"
+              ],
+              "example": "off"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous convection mode if successful, otherwise null",
+            "example": "eco"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "active"
+            }
+          }
+        },
+        {
+          "name": "temperatureChanged",
+          "args": {
+            "type": "number",
+            "description": "previous and new temperature",
+            "example": {
+              "previousTemperature": 180,
+              "newTemperature": 200
+            }
+          }
+        },
+        {
+          "name": "heatChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new heat mode",
+            "example": {
+              "previousHeat": "conventional",
+              "newHeat": "top"
+            }
+          }
+        },
+        {
+          "name": "grillChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new grill mode",
+            "example": {
+              "previousGrill": "eco",
+              "newGrill": "large"
+            }
+          }
+        },
+        {
+          "name": "convectionChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new convection mode",
+            "example": {
+              "previousConvection": "off",
+              "newConvection": "normal"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "li6cbv5sdlatti0j",
+      "name": "ac",
+      "actions": [
+        {
+          "name": "turnOn",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "turnOff",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "setTemperature",
+          "params": [
+            {
+              "name": "temperature",
+              "type": "number",
+              "description": "temperature in centigrades",
+              "minValue": 18,
+              "maxValue": 38,
+              "example": 24
+            }
+          ],
+          "return": {
+            "type": "number",
+            "description": "previous temperature if successful, otherwise null",
+            "example": 24
+          }
+        },
+        {
+          "name": "setMode",
+          "params": [
+            {
+              "name": "mode",
+              "type": "string",
+              "description": "mode",
+              "supportedValues": [
+                "cool",
+                "heat",
+                "fan"
+              ],
+              "example": "cool"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous mode if successful, otherwise null",
+            "example": "fan"
+          }
+        },
+        {
+          "name": "setVerticalSwing",
+          "params": [
+            {
+              "name": "verticalSwing",
+              "type": "string",
+              "description": "vertical swing",
+              "supportedValues": [
+                "auto",
+                "22",
+                "45",
+                "67",
+                "90"
+              ],
+              "example": "auto"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous vertical swing if successful, otherwise null",
+            "example": "auto"
+          }
+        },
+        {
+          "name": "setHorizontalSwing",
+          "params": [
+            {
+              "name": "horizontalSwing",
+              "type": "string",
+              "description": "horizontal swing",
+              "supportedValues": [
+                "auto",
+                "-90",
+                "-45",
+                "0",
+                "45",
+                "90"
+              ],
+              "example": "auto"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous horizontal swing if successful, otherwise null",
+            "example": true
+          }
+        },
+        {
+          "name": "setFanSpeed",
+          "params": [
+            {
+              "name": "fanSpeed",
+              "type": "string",
+              "description": "fan speed",
+              "supportedValues": [
+                "auto",
+                "25",
+                "50",
+                "75",
+                "100"
+              ],
+              "example": "auto"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous fan speed if successful, otherwise null",
+            "example": true
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "on"
+            }
+          }
+        },
+        {
+          "name": "temperatureChanged",
+          "args": {
+            "type": "number",
+            "description": "previous and new temperature",
+            "example": {
+              "previousTemperature": 22,
+              "newTemperature": 24
+            }
+          }
+        },
+        {
+          "name": "modeChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new mode",
+            "example": {
+              "previousMode": "fan",
+              "newMode": "heat"
+            }
+          }
+        },
+        {
+          "name": "verticalSwingChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new vertical swing",
+            "example": {
+              "previousSwing": "22",
+              "newSwing": "auto"
+            }
+          }
+        },
+        {
+          "name": "horizontalSwingChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new horizontal swing",
+            "example": {
+              "previousSwing": "0",
+              "newSwing": "auto"
+            }
+          }
+        },
+        {
+          "name": "fanSpeedChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new fan speed",
+            "example": {
+              "previousSpeed": "50",
+              "newSpeed": "auto"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "lsf78ly0eqrjbz91",
+      "name": "door",
+      "actions": [
+        {
+          "name": "open",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "close",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "lock",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "unlock",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "closed"
+            }
+          }
+        },
+        {
+          "name": "lockChanged",
+          "args": {
+            "type": "object",
+            "description": "new lock",
+            "example": {
+              "newLock": "unlocked"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mxztsyjzsrq7iaqc",
+      "name": "alarm",
+      "actions": [
+        {
+          "name": "changeSecurityCode",
+          "params": [
+            {
+              "name": "oldSecurityCode",
+              "type": "string",
+              "description": "old security code",
+              "minValue": "0000",
+              "maxValue": "9999",
+              "example": "1234"
+            },
+            {
+              "name": "newSecurityCode",
+              "type": "string",
+              "description": "new security code",
+              "minValue": "0000",
+              "maxValue": "9999",
+              "example": "5555"
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "armStay",
+          "params": [
+            {
+              "name": "securityCode",
+              "type": "string",
+              "description": "security code",
+              "minValue": "0000",
+              "maxValue": "9999",
+              "example": "1234"
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "armAway",
+          "params": [
+            {
+              "name": "securityCode",
+              "type": "string",
+              "description": "security code",
+              "minValue": "0000",
+              "maxValue": "9999",
+              "example": "1234"
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "disarm",
+          "params": [
+            {
+              "name": "securityCode",
+              "type": "string",
+              "description": "security code",
+              "minValue": "0000",
+              "maxValue": "9999",
+              "example": "1234"
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "armed"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ofglvd9gqX8yfl3l",
+      "name": "vacuum",
+      "actions": [
+        {
+          "name": "start",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "pause",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "dock",
+          "params": [],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        },
+        {
+          "name": "setMode",
+          "params": [
+            {
+              "name": "mode",
+              "type": "string",
+              "description": "cleaning mode",
+              "supportedValues": [
+                "vacuum",
+                "mop"
+              ],
+              "example": "vacuum"
+            }
+          ],
+          "return": {
+            "type": "string",
+            "description": "previous mode if successful, otherwise null",
+            "example": "mop"
+          }
+        },
+        {
+          "name": "setLocation",
+          "params": [
+            {
+              "name": "roomId",
+              "type": "string",
+              "description": "room id",
+              "example": "b4e1669bd6d94d29"
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "true if successful, otherwise false",
+            "example": true
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "statusChanged",
+          "args": {
+            "type": "object",
+            "description": "new status",
+            "example": {
+              "newStatus": "docked"
+            }
+          }
+        },
+        {
+          "name": "modeChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new mode",
+            "example": {
+              "previousMode": "mop",
+              "newMode": "vacuum"
+            }
+          }
+        },
+        {
+          "name": "locationChanged",
+          "args": {
+            "type": "object",
+            "description": "previous and new location",
+            "example": {
+              "previousLocation": "b4e1669bd6d94d29",
+              "newLocation": "544a4d517dacecf9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "rnizejqr2di0okho",
+      "name": "refrigerator",
+      "actions": [
+        {
+          "name": "setFreezerTemperature",
+          "params": [
+            {
+              "name": "temperature",
+              "type": "number",
+              "description": "temperature in centigrades",
+              "minValue": -20,
+              "maxValue": -8,
+              "example": -10
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "previous temperature if successful, otherwise false",
+            "example": -18
+          }
+        },
+        {
+          "name": "setTemperature",
+          "params": [
+            {
+              "name": "temperature",
+              "type": "number",
+              "description": "temperature in centigrades",
+              "minValue": 2,
+              "maxValue": 8,
+              "example": 4
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "previous temperature if successful, otherwise false",
+            "example": 4
+          }
+        },
+        {
+          "name": "setMode",
+          "params": [
+            {
+              "name": "mode",
+              "description": "mode",
+              "supportedValues": [
+                "default",
+                "vacation",
+                "party"
+              ],
+              "example": "default"
+            }
+          ],
+          "return": {
+            "type": "boolean",
+            "description": "previous mode if successful, otherwise false",
+            "example": "party"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "freezerTemperatureChanged",
+          "args": {
+            "type": "number",
+            "description": "previous and new temperature",
+            "example": {
+              "previousTemperature": 20,
+              "newTemperature": -18
+            }
+          }
+        },
+        {
+          "name": "temperatureChanged",
+          "args": {
+            "type": "number",
+            "description": "previous and new temperature",
+            "example": {
+              "previousTemperature": 2,
+              "newTemperature": 4
+            }
+          }
+        },
+        {
+          "name": "modeChanged",
+          "args": {
+            "type": "string",
+            "description": "previous and new mode",
+            "example": {
+              "previousMode": "default",
+              "newMode": "vacation"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

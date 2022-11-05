@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/device_config_padding"
+    android:id="@+id/parent_layout"
+    tools:context=".ui.DispositivosTypes.BlindsConfigFragment">
+
+    <TextView
+        android:id="@+id/estados_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Section_Title"
+        android:text="@string/state"
+        android:layout_alignParentStart="true" />
+    <View style="@style/Divider"
+        android:id="@+id/div_1"
+        android:layout_below="@+id/estados_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blinds_estados_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_blinds_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open"
+            style="@style/Radio_Group_Item"
+            />
+        <RadioButton android:id="@+id/radio_blinds_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/closed"
+            style="@style/Radio_Group_Item"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/progreso_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Section_Title"
+        android:text="@string/progress"
+        android:layout_below="@+id/blinds_estados_radio_group" />
+    <View style="@style/Divider"
+        android:id="@+id/div_2"
+        android:layout_below="@+id/progreso_label"
+        android:layout_marginBottom="10dp"/>
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        android:layout_below="@+id/div_2"
+        style="@style/Progress_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="34"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/determinateBar"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/progress_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blind_opened"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/progress_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opening"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_toEndOf="@id/progress_open"
+            android:layout_toStartOf="@id/progress_close"/>
+        <TextView
+            android:id="@+id/progress_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blind_closed"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+.rounded-card{
+    border-radius:16px;
+}
+
+.v-input__slider {
+    width: 50%;
+  }
+
+.perfilTitle{
+    color:white;
+    text-align:left;
+    position:relative;
+    bottom:4px;
+    font-family: "Roboto";
+    font-size:22px;
+    font-weight:400;
+}
+
+.pencilIconPerfil{
+    position:relative;
+    top:6px;
+    left:140px;
+}
+
+.tituloPerfiles{
+    color:gray;
+    font-size:30px;
+    position:relative;
+}

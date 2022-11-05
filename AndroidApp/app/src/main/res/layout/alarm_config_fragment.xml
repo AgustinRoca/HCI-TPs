@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/device_config_padding"
+    tools:context=".ui.DispositivosTypes.AlarmConfigFragment">
+
+    <TextView
+        android:id="@+id/codigo_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/codigo"
+        style="@style/Section_Title"
+        android:layout_alignParentStart="true" />
+    <View style="@style/Divider"
+        android:id="@+id/div_0"
+        android:layout_below="@+id/codigo_label" />
+    <EditText
+        android:id="@+id/pass_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/div_0"/>
+
+    <TextView
+        android:id="@+id/armar_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/armar"
+        style="@style/Section_Title"
+        android:layout_below="@+id/pass_input" />
+    <View style="@style/Divider"
+        android:id="@+id/div_1"
+        android:layout_below="@+id/armar_label" />
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_below="@id/div_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Layout_With_Margin"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_arm_stay"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="@string/arm_stay"
+            android:layout_weight="0.33"/>
+        <Button
+            android:id="@+id/button_arm_away"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="@string/arm_away"
+            android:layout_weight="0.33"/>
+        <Button
+            android:id="@+id/button_disarm"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="@string/disarm"
+            android:layout_weight="0.33"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cambiar_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar_codigo"
+        style="@style/Section_Title"
+        android:layout_below="@+id/button_layout" />
+    <View style="@style/Divider"
+        android:id="@+id/div_2"
+        android:layout_below="@+id/cambiar_label" />
+    <LinearLayout
+        android:id="@+id/new_pass_layout"
+        android:layout_below="@id/div_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Layout_With_Margin"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/new_pass_input"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:maxLength="4"
+            android:inputType="numberPassword"
+            android:layout_weight="0.66"/>
+        <Button
+            android:id="@+id/button_cambiar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="@string/cambiar"
+            android:layout_weight="0.33"/>
+    </LinearLayout>
+
+</RelativeLayout>

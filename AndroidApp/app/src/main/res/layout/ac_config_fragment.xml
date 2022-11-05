@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DispositivosTypes.AcConfigFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/estados_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/state"
+        style="@style/Section_Title"
+        android:layout_alignParentStart="true" />
+    <View style="@style/Divider"
+        android:id="@+id/div_1"
+        android:layout_below="@+id/estados_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_estados_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_ac_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/on"
+            />
+        <RadioButton android:id="@+id/radio_ac_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/off"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/temperature_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature"
+        style="@style/Section_Title"
+        android:layout_below="@id/ac_estados_radio_group" />
+    <View style="@style/Divider"
+        android:id="@+id/div_2"
+        android:layout_below="@+id/temperature_label" />
+    <LinearLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_below="@+id/div_2"
+        android:layout_width="match_parent"
+        style="@style/Layout_With_Margin"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/temperature_seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/progress_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            style="@style/Seek_Label"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mode_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mode"
+        style="@style/Section_Title"
+        android:layout_below="@id/seekbar_layout"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_3"
+        android:layout_below="@+id/mode_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_mode_radio_group"
+        android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_ac_mode_cool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Radio_Group_Item"
+                android:text="@string/cool"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                />
+            <RadioButton android:id="@+id/radio_ac_mode_heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Radio_Group_Item"
+                android:text="@string/heat"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                />
+            <RadioButton android:id="@+id/radio_ac_mode_fan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Radio_Group_Item"
+                android:text="@string/fan"
+                />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/vertical_swing_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vertical_swing"
+        style="@style/Section_Title"
+        android:layout_below="@id/ac_mode_radio_group"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_4"
+        android:layout_below="@+id/vertical_swing_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_vs_radio_group"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_ac_vs_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:layout_weight=".2"
+            android:text="@string/vs_auto"
+            />
+        <RadioButton android:id="@+id/radio_ac_vs_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:layout_weight=".2"
+            android:text="@string/vs_22"
+            />
+        <RadioButton android:id="@+id/radio_ac_vs_45"
+            android:layout_width="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="@string/vs_45"
+            />
+        <RadioButton android:id="@+id/radio_ac_vs_67"
+            android:layout_width="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="@string/vs_67"
+            />
+        <RadioButton android:id="@+id/radio_ac_vs_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:layout_weight=".2"
+            android:text="@string/vs_90"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/horizontal_swing_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/horizontal_swing"
+        style="@style/Section_Title"
+        android:layout_below="@id/ac_vs_radio_group"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_5"
+        android:layout_below="@+id/horizontal_swing_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_hs_radio_group"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_ac_hs_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/hs_auto"
+            android:layout_weight=".16"
+            />
+        <RadioButton android:id="@+id/radio_ac_hs_m90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/hs_m90"
+            android:layout_weight=".16"
+            />
+        <RadioButton android:id="@+id/radio_ac_hs_m45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/hs_m45"
+            android:layout_weight=".16"
+            />
+        <RadioButton android:id="@+id/radio_ac_hs_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/hs_0"
+            android:layout_weight=".16"
+            />
+        <RadioButton android:id="@+id/radio_ac_hs_45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/hs_45"
+            android:layout_weight=".16"
+            />
+        <RadioButton android:id="@+id/radio_ac_hs_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/hs_90"
+            android:layout_weight=".16"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/fan_speed_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fan_speed"
+        style="@style/Section_Title"
+        android:layout_below="@id/ac_hs_radio_group"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_6"
+        android:layout_below="@+id/fan_speed_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_fs_radio_group"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_ac_fs_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/fs_auto"
+            android:layout_weight=".2"
+            />
+        <RadioButton android:id="@+id/radio_ac_fs_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/fs_25"
+            android:layout_weight=".2"
+            />
+        <RadioButton android:id="@+id/radio_ac_fs_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/fs_50"
+            android:layout_weight=".2"
+            />
+        <RadioButton android:id="@+id/radio_ac_fs_75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/fs_75"
+            android:layout_weight=".2"
+            />
+        <RadioButton android:id="@+id/radio_ac_fs_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/fs_100"
+            android:layout_weight=".2"
+            />
+    </RadioGroup>
+    </RelativeLayout>
+</ScrollView>

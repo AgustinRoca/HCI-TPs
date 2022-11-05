@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">HouseITBA</string>
+    <string name="app_shared_preferences_file">HouseITBA_Preferences</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_device">Dispositivos</string>
+    <string name="title_favs">Favoritos</string>
+    <string name="title_routines">Rutinas</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="settings">Configuración</string>
+    <string name="play_button">Ejecutar rutina</string>
+    <string name="rutina">Rutina</string>
+    <string name="actions">Acciones</string>
+    <string name="routine_actions">%1$s Acciones</string>
+    <string name="dispositivo">Dispositivo</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="button">Botón</string>
+    <string name="IP">IP</string>
+    <string name="port">Puerto</string>
+    <string name="confirm">Confirmar</string>
+    <string name="save">Guardar</string>
+    <string name="action_search">Buscar</string>
+    <string name="dash">-</string>
+
+    <string name="notifications_channel_id_device">HouseITBANotificaciones_Dispositivos</string>
+    <string name="notifications_channel_id_routine">HouseITBANotificaciones_Rutinas</string>
+    <string name="notifications_channel_description_device">HouseITBA Canal de Notificaciones para Dispositivos</string>
+    <string name="notifications_channel_description_routine">HouseITBA Canal de Notificaciones para Rutinas</string>
+    <string name="notifications_channel_name_device">HouseITBA Dispositivos</string>
+    <string name="notifications_channel_name_routine">HouseITBA Rutinas</string>
+
+    <string name="blinds_switch_text">Estado</string>
+    <string name="blind_text_off">Abierto</string>
+    <string name="blind_text_on">Cerrado</string>
+    <string name="progress">Progreso</string>
+    <string name="opening">Abriendo</string>
+    <string name="closing">Cerrando</string>
+    <string name="blind_opened">Abierto</string>
+    <string name="blind_closed">Cerrado</string>
+
+    <string name="state">Estado</string>
+    <string name="open">Abierto</string>
+    <string name="closed">Cerrado</string>
+
+    <string name="on">Prendido</string>
+    <string name="off">Apagado</string>
+
+    <string name="brightness">Brillo</string>
+    <string name="color">Color</string>
+
+    <string name="temperature">Temperatura</string>
+    <string name="heat">Calor</string>
+    <string name="conventional">Normal</string>
+    <string name="bottom">Abajo</string>
+    <string name="top">Arriba</string>
+    <string name="grill">Parrilla</string>
+    <string name="large">Grande</string>
+    <string name="eco">Eco</string>
+    <string name="normal">Normal</string>
+    <string name="convection">Convección</string>
+
+    <string name="block">Bloqueo</string>
+    <string name="opened">Abierto</string>
+    <string name="blocked">Bloqueado</string>
+    <string name="unblocked">Desbloqueado</string>
+
+    <string name="temperatureFreezer">Temperatura del Freezer</string>
+    <string name="mode">Modo</string>
+    <string name="default_mode">Normal</string>
+    <string name="party">Fiesta</string>
+    <string name="vacation">Vacaciones</string>
+
+    <string name="cool">Frio</string>
+    <string name="fan">Ventilador</string>
+    <string name="vertical_swing">Movimiento Vertical</string>
+    <string name="vs_auto">Auto</string>
+    <string name="vs_22">22</string>
+    <string name="vs_45">45</string>
+    <string name="vs_67">67</string>
+    <string name="vs_90">90</string>
+    <string name="horizontal_swing">Movimiento Horizontal</string>
+    <string name="hs_auto">Auto</string>
+    <string name="hs_m90">-90</string>
+    <string name="hs_m45">-45</string>
+    <string name="hs_0">0</string>
+    <string name="hs_45">45</string>
+    <string name="hs_90">90</string>
+    <string name="fan_speed">Velocidad del Ventilador</string>
+    <string name="fs_auto">Auto</string>
+    <string name="fs_25">25</string>
+    <string name="fs_50">50</string>
+    <string name="fs_75">75</string>
+    <string name="fs_100">100</string>
+
+    <string name="codigo">Código de Seguridad</string>
+    <string name="armar">Seguridad</string>
+    <string name="arm_stay">Armar - Quedarse</string>
+    <string name="arm_away">Armar - Irse</string>
+    <string name="disarm">Desarmar</string>
+    <string name="cambiar_codigo">Cambiar Código</string>
+    <string name="cambiar">Cambiar</string>
+    <string name="armed_stay_status">Armado - Quedarse</string>
+    <string name="armed_away_status">Armado - Irse</string>
+    <string name="disarmed_status">Desarmado</string>
+
+    <string name="action_success">Se ejecutó la accion correctamente sobre %1$s</string>
+    <string name="action_fail">Falló la acción sobre %1$s</string>
+    <string name="routine_success">Se ejecutó la rutina %1$s</string>
+    <string name="routine_fail">Hubo un problema al ejecutar %1$s</string>
+    <string name="fail_verticalSwing">Falló al actualizar el movimiento vertical</string>
+    <string name="fail_off">Falló al apagarse</string>
+    <string name="fail_on">Falló al prenderse</string>
+    <string name="fail_mode">Falló al actualizar el modo</string>
+    <string name="fail_horizontalSwing">Falló al actualizar el movimiento horizontal</string>
+    <string name="fail_fanSpeed">Falló al actualizar la velocidad del ventilador</string>
+    <string name="fail_temperature">Falló al actualizar la temperatura</string>
+    <string name="fail_open">Falló al abrirse</string>
+    <string name="fail_close">Falló al cerrarse</string>
+    <string name="fail_openDoorFirst">No puede realizar esa acción, tiene que desbloquear la puerta primero</string>
+    <string name="fail_block">Falló al bloquearse</string>
+    <string name="fail_unblock">Falló al desbloquearse</string>
+    <string name="fail_passwordNeeded">Se necesita la contraseña</string>
+    <string name="fail_invalidPassword">Contraseña inválida</string>
+    <string name="fail_activateAlarm">Falló al armarse</string>
+    <string name="fail_deactivateAlarm">Falló al desarmarse</string>
+    <string name="fail_newPasswordNeeded">Se necesita la nueva contraseña</string>
+    <string name="fail_newPasswordInvalid">Nueva contraseña inválida</string>
+    <string name="success_passwordChange">Se cambió correctamente</string>
+    <string name="fail_passwordChange">Falló al cambiar contraseña</string>
+    <string name="fail_brightness">Falló al actualizar el brillo</string>
+    <string name="fail_color">Falló al actualizar el color</string>
+    <string name="fail_heatMode">Falló al actualizar el modo de calor</string>
+    <string name="fail_grillMode">Falló al actualizar el modo de parrilla</string>
+    <string name="fail_convectionMode">Falló al actualizar el modo de conveccion</string>
+    <string name="fail_freezerTemp">Falló al actualizar la temperatura del freezer</string>
+    <string name="success_APIConnection">Se actualizó las configuraciones del API</string>
+    <string name="alert_connectApi">Conecte la API desde la configuración</string>
+    <string name="fail_invalid_ip">Dirección de IP inválida</string>
+    <string name="fail_invalid_port">Puerto inválido. Los puertos pueden ir entre 1024 y 65535</string>
+
+    <string name="blinds">Persiana</string>
+    <string name="lamp">Lampara</string>
+    <string name="oven">Horno</string>
+    <string name="ac">Aire Acondicionado</string>
+    <string name="door">Puerta</string>
+    <string name="refrigerator">Heladera</string>
+    <string name="alarm">Alarma</string>
+    <string name="vacuum">Aspiradora</string>
+    <string name="notif_newDevice_title">Nuevos Dispositivos</string>
+    <string name="notif_newDevice_body">Se cargaron nuevos dispositivos, entra y miralos…</string>
+    <string name="notf_deviceDeleted_title">Dispositivo Eliminado</string>
+    <string name="notif_deviceDeleted_body">Se eliminó un dispositivo, entra y ve cuál fue…</string>
+    <string name="notif_deviceChanged_title">Cambio de estado de un dispositivo</string>
+    <string name="notif_deviceChanged_body">Se cambio el estado de %1$s</string>
+
+</resources>

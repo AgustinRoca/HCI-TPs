@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/device_config_padding"
+    tools:context=".ui.DispositivosTypes.OvenConfigFragment">
+
+    <TextView
+        android:id="@+id/estados_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/state"
+        style="@style/Section_Title"
+        android:layout_alignParentStart="true" />
+    <View style="@style/Divider"
+        android:id="@+id/div_1"
+        android:layout_below="@+id/estados_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oven_estados_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_oven_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/on"
+            />
+        <RadioButton android:id="@+id/radio_oven_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/off"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/temperature_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature"
+        android:layout_below="@id/oven_estados_radio_group" />
+    <View style="@style/Divider"
+        android:id="@+id/div_2"
+        android:layout_below="@+id/temperature_label" />
+    <LinearLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_below="@+id/div_2"
+        android:layout_width="match_parent"
+        style="@style/Layout_With_Margin"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/temperature_seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/progress_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            style="@style/Seek_Label"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/heat_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/heat"
+        style="@style/Section_Title"
+        android:layout_below="@id/seekbar_layout"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_3"
+        android:layout_below="@+id/heat_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oven_heat_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_oven_heat_conventional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/conventional"
+            />
+        <RadioButton android:id="@+id/radio_oven_heat_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/bottom"
+            />
+        <RadioButton android:id="@+id/radio_oven_heat_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/top"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/grill_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grill"
+        style="@style/Section_Title"
+        android:layout_below="@id/oven_heat_radio_group"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_4"
+        android:layout_below="@+id/grill_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oven_grill_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_oven_grill_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/large"
+            />
+        <RadioButton android:id="@+id/radio_oven_grill_eco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/eco"
+            />
+        <RadioButton android:id="@+id/radio_oven_grill_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/off"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/convection_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convection"
+        style="@style/Section_Title"
+        android:layout_below="@id/oven_grill_radio_group"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_5"
+        android:layout_below="@+id/convection_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oven_convection_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_oven_convection_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/normal"
+            />
+        <RadioButton android:id="@+id/radio_oven_convection_eco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/eco"
+            />
+        <RadioButton android:id="@+id/radio_oven_convection_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/off"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+.rounded-card{
+    border-radius: 5px;
+}
+
+.v-input__slider {
+    width: 50%;
+  }
+
+.left-text{
+    color:black;
+    position:relative;
+    font-family: "Roboto", sans-serif;
+    font-size:18px;
+    bottom:2px;
+}
+
+.header {
+    color:grey;
+    text-align:left;
+    position:relative;
+    bottom:4px;
+    font-family: "Roboto", sans-serif;
+    font-size:22px;
+    font-weight:400;
+  }
+
+.switch{
+    position: relative;
+    bottom:12px;
+    left:20px;
+
+}
+
+.rounded-img{
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    elevation: higher;
+}
+
+
+.play-button-inside{
+    position:relative;
+    top:5px;
+    left:50px;
+}
+
+.play-button-outside{
+    position:relative;
+    top:7px;
+    left:0px;
+}
+
+.delete-button{
+    position:relative;
+    left:40px;
+}
+
+.int-actions{
+    border-left:solid 4px #3cd1c2
+}

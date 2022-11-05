@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/dispositivos">
+
+    <fragment
+        android:id="@+id/rutinas"
+        android:name="ar.edu.itba.houseitba.ui.Rutinas.Rutinas"
+        android:label="@string/title_routines"
+        tools:layout="@layout/rutinas_fragment" >
+
+        <action
+            android:id="@+id/action_rutinas_to_favoritos"
+            app:destination="@id/favoritos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_rutinas_to_dispositivos"
+            app:destination="@id/dispositivos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/favoritos"
+        android:name="ar.edu.itba.houseitba.ui.Favoritos.Favoritos"
+        android:label="@string/title_favs"
+        tools:layout="@layout/favoritos_fragment" >
+
+       <action
+           android:id="@+id/action_favoritos_to_rutinas"
+           app:destination="@id/rutinas"
+           app:enterAnim="@anim/nav_default_enter_anim"
+           app:exitAnim="@anim/nav_default_exit_anim"
+           app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+           app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+       <action
+           android:id="@+id/action_favoritos_to_dispositivos"
+           app:destination="@id/dispositivos"
+           app:enterAnim="@anim/nav_default_enter_anim"
+           app:exitAnim="@anim/nav_default_exit_anim"
+           app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+           app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+   </fragment>
+   <fragment
+       android:id="@+id/dispositivos"
+       android:name="ar.edu.itba.houseitba.ui.Dispositivos.Dispositivos"
+       android:label="@string/title_device"
+       tools:layout="@layout/dispositivos_fragment" >
+
+       <action
+           android:id="@+id/action_dispositivos_to_favoritos"
+           app:destination="@id/favoritos"
+           app:enterAnim="@anim/nav_default_enter_anim"
+           app:exitAnim="@anim/nav_default_exit_anim"
+           app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+           app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+       <action
+           android:id="@+id/action_dispositivos_to_rutinas"
+           app:destination="@id/rutinas"
+           app:enterAnim="@anim/nav_default_enter_anim"
+           app:exitAnim="@anim/nav_default_exit_anim"
+           app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+           app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+   </fragment>
+</navigation>

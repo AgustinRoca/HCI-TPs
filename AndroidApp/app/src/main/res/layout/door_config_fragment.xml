@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/device_config_padding"
+    tools:context=".ui.DispositivosTypes.DoorConfigFragment">
+
+    <TextView
+        android:id="@+id/estados_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/state"
+        style="@style/Section_Title"
+        android:layout_alignParentStart="true" />
+    <View style="@style/Divider"
+        android:id="@+id/div_1"
+        android:layout_below="@+id/estados_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/door_estados_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_door_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/opened"
+            />
+        <RadioButton android:id="@+id/radio_door_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/closed"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/block_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/block"
+        style="@style/Section_Title"
+        android:layout_below="@+id/door_estados_radio_group"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_2"
+        android:layout_below="@+id/block_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/door_block_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_door_blocked"
+            android:layout_width="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:layout_height="wrap_content"
+            android:text="@string/blocked"
+            />
+        <RadioButton android:id="@+id/radio_door_unblocked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/unblocked"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

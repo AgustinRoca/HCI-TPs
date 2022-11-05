@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/device_config_padding"
+    tools:context=".ui.DispositivosTypes.LampConfigFragment">
+
+    <TextView
+        android:id="@+id/estados_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Section_Title"
+        android:text="@string/state"
+        android:layout_alignParentStart="true" />
+    <View style="@style/Divider"
+        android:id="@+id/div_1"
+        android:layout_below="@+id/estados_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lamp_estados_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_lamp_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/on"
+            />
+        <RadioButton android:id="@+id/radio_lamp_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/off"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/brillo_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/brightness"
+        style="@style/Section_Title"
+        android:layout_below="@id/lamp_estados_radio_group" />
+    <View style="@style/Divider"
+        android:id="@+id/div_2"
+        android:layout_below="@+id/brillo_label" />
+    <LinearLayout
+        android:id="@+id/brightness_layout"
+        android:layout_below="@+id/div_2"
+        android:layout_width="match_parent"
+        style="@style/Layout_With_Margin"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/brightness_seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/progress_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            style="@style/Seek_Label"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/color_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/color"
+        style="@style/Section_Title"
+        android:layout_below="@id/brightness_layout" />
+    <View style="@style/Divider"
+        android:id="@+id/div_3"
+        android:layout_below="@+id/color_label" />
+    <LinearLayout
+        android:layout_below="@+id/div_3"
+        android:layout_width="match_parent"
+        style="@style/Layout_With_Margin"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/color_seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/color_show_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+</RelativeLayout>

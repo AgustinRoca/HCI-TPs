@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/device_config_padding"
+    tools:context=".ui.DispositivosTypes.RefrigeratorConfigFragment">
+
+    <TextView
+        android:id="@+id/temperature_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature"
+        style="@style/Section_Title"
+        android:layout_alignParentStart="true" />
+    <View style="@style/Divider"
+        android:id="@+id/div_1"
+        android:layout_below="@+id/temperature_label" />
+    <LinearLayout
+        android:id="@+id/seekbar_temperatura_layout"
+        android:layout_below="@+id/div_1"
+        style="@style/Layout_With_Margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/temperature_seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/progress_temperature_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            style="@style/Seek_Label"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/temperature_freezer_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatureFreezer"
+        style="@style/Section_Title"
+        android:layout_below="@+id/seekbar_temperatura_layout"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_2"
+        android:layout_below="@+id/temperature_freezer_label" />
+    <LinearLayout
+        android:id="@+id/seekbar_temperatura_freezer_layout"
+        android:layout_below="@+id/div_2"
+        android:layout_width="match_parent"
+        style="@style/Layout_With_Margin"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/temperature_freezer_seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/progress_temperature_freezer_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            style="@style/Seek_Label"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mode_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mode"
+        style="@style/Section_Title"
+        android:layout_below="@id/seekbar_temperatura_freezer_layout"/>
+    <View style="@style/Divider"
+        android:id="@+id/div_3"
+        android:layout_below="@+id/mode_label" />
+    <RadioGroup
+        android:layout_below="@+id/div_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/refrigerator_mode_radio_group"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_refrigerator_mode_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/default_mode"
+            />
+        <RadioButton android:id="@+id/radio_refrigerator_mode_party"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/party"
+            />
+        <RadioButton android:id="@+id/radio_refrigerator_mode_vacation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Radio_Group_Item"
+            android:text="@string/vacation"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

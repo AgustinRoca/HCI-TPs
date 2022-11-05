@@ -1,0 +1,41 @@
+
+
+.settings-icon{
+    bottom:2px;
+    left:2px;
+    size:large;
+    position:relative;
+
+}
+
+.fav-icon{
+    size:large;
+    position:relative;
+}
+
+.device-name{
+    font-size:23px;
+    color:black;
+}
+
+.nombreDispositivo{
+    color:black;
+    position:relative;
+    font-family: "Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif";
+    font-size:20px;
+    top:12px;
+    left:20px;
+}
+
+.tituloDispostivos{
+    color:gray;
+    font-size:30px;
+    position:relative;
+}   
+
+.filtroDispositivos{
+    top:10px;
+    left:200px;
+    position:relative;
+
+}
